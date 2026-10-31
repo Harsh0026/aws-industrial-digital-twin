@@ -30,7 +30,7 @@ notes before progressing. There are no fixed deadlines.
 - EC2 development environment verified.
 - Git and GitHub CLI configured.
 - Public GitHub repository created.
-- Simulator development has not started.
+- Initial Python simulator implemented and verified from two working directories.
 
 ## Development principles
 
@@ -39,3 +39,19 @@ notes before progressing. There are no fixed deadlines.
 - Validate behavior using actual terminal output and failure testing.
 - Keep credentials out of Git and infrastructure costs low.
 - Use simulated equipment; this is not a live factory deployment.
+
+## Run the initial simulator
+
+Requires Python 3. Tested on Python 3.14.4; no external packages are required.
+
+From the repository root:
+
+```bash
+python3 simulator/simulate.py
+```
+
+The script prints three JSON events and exits. Readings are illustrative,
+all machines are running, and no MQTT connection is made yet.
+
+See [consolidated revision notes](docs/interview-revision/revision.md)
+for design decisions, validation, and current limitations.

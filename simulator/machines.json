@@ -1,0 +1,18 @@
+{
+  "site_id": "factory-001",
+  "line_id": "line-001",
+  "machines": [
+    {
+      "machine_id": "conveyor-001",
+      "machine_type": "conveyor_motor"
+    },
+    {
+      "machine_id": "pump-001",
+      "machine_type": "pump"
+    },
+    {
+      "machine_id": "compressor-001",
+      "machine_type": "compressor"
+    }
+  ]
+}
